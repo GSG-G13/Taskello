@@ -23,7 +23,7 @@ CREATE TABLE tasks (
   description TEXT NOT NULL,
   created_at TIMESTAMP  NOT NULL DEFAULT NOW(),
   deadline VARCHAR(256) NOT NULL,
-  assigned_to INTEGER REFERENCES users(id),
+  user_id INTEGER REFERENCES users(id),
   project_id INTEGER REFERENCES projects(id)
 
 );
