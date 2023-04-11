@@ -1,1 +1,1 @@
-const { signIn, signup } = require("../controllers/users");
+const { signIn, signup } = require("../controllers/auth");
