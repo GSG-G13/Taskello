@@ -17,7 +17,7 @@ const postUserData=(user)=>{
 const postTaskData=(task)=>{
 const {title,desc,deadline} = task;
 const taskSql = {
-  text: "INSERT INTO tasks(title,desc,deadline) VALUES($1, $2,$3,$4) returning title,desc,deadline",
+  text: "INSERT INTO tasks(title,desc,deadline) VALUES($1, $2,$3) returning title,desc,deadline",
   values: [title,desc,deadline],
 };
 
