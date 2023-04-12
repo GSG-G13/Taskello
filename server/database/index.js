@@ -1,8 +1,6 @@
-const {
-    postDataQuery,
-    getDataQuery } = require('./queries');
+const { postDataQuery, getDataQuery } = require("./queries");
 
 module.exports = {
-    postDataQuery,
-    getDataQuery
+  postDataQuery,
+  getDataQuery,
 };

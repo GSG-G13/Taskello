@@ -1,4 +1,4 @@
-const getDataQuery = require('./get');
-const postDataQuery = require('./post');
+const { getDataQuery } = require("./get");
+const { postUserData } = require("./post");
 
-module.exports = {getDataQuery, postDataQuery};
+module.exports = { getDataQuery, postUserData };
