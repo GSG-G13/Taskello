@@ -16,4 +16,12 @@ const getAllTasksDataQuery = () => {
   return connection.query(sql);
 };
 
-module.exports = {getData, getAllTasksDataQuery};
+const getAllUsersQuery = () => {
+  const sql = {
+    text: 'SELECT * FROM users',
+  };
+  return connection.query(sql);
+};
+
+
+module.exports = {getData, getAllTasksDataQuery,getAllUsersQuery};

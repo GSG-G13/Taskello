@@ -1,6 +1,4 @@
-const { postDataQuery } = require('../../database/');
-
-const { postTaskData } = postDataQuery;
+const { postTaskData } = require("../../database/queries/post");
 
 const addTaskController = (req, res) => {
   const { title, description,deadline, user_id ,project_id } = req.body;

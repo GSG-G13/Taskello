@@ -1,6 +1,5 @@
-const { getDataQuery } = require('../../database/');
+const { getAllTasksDataQuery } = require('../../database/queries/get');
 
-const { getAllTasksDataQuery } = getDataQuery;
 
 const getAllTasksDataController = (req, res) => {
     getAllTasksDataQuery()
@@ -19,4 +18,4 @@ const getAllTasksDataController = (req, res) => {
       });
   };
   
-module.exports = getAllTasksDataController;
+module.exports = {getAllTasksDataController};
