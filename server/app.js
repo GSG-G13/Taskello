@@ -7,6 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(join(__dirname, "..", "public")));
 
+
 app.use(router);
 
 app.set("port", process.env.PORT || 9000);
