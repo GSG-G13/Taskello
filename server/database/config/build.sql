@@ -28,7 +28,7 @@ CREATE TABLE tasks (
 
 );
 
-
+-- //C:/Users/farah/Desktop/Taskello/server/database/config/build.sql
 
 
 
