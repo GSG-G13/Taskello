@@ -12,8 +12,7 @@ const addTaskController = (req, res) => {
         count: data.rowCount,
         data: data.rows,
       })
-    )
-    .catch((err) =>
+    ).catch((err) =>
       res.status(500).json({
         message: err.message,
       })
